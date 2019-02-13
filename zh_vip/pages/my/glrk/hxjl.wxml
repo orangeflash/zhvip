@@ -1,0 +1,42 @@
+<!--zh_vip/pages/my/glrk/hxjl.wxml-->
+<view class="list">
+  <view class="list_imgbk2" hidden="{{order_list.length!=0||!mygd}}">
+    <image mode='aspectFit' class="list_imgbk" src="../../../img/list.png"></image>
+    <view class="list_imgbk3">您暂无相关明细哦！</view>
+  </view>
+  <block wx:for="{{order_list}}">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">核销管理员：{{item.store_name}}({{item.username}})</view>
+        <view class="weui-cell__ft" style='color:#ff7f46'>扣次：-{{item.num}}</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <image src="{{item.img}}" class='himg'></image>
+        </view>
+        <view class="weui-cell__bd">
+          <view>用户：{{item.nickname}}</view>
+          <view>时间：{{item.time}}</view>
+        </view>
+        <!-- <view style="color:#ff7f46;" class="weui-cell__ft">扣次：-{{item.num}}</view> -->
+      </view>
+      <!-- <view class="weui-cell">
+        <view wx:if="{{item.type=='1'}}" class="weui-cell__bd">支付宝帐号：{{item.account}}</view>
+        <view wx:if="{{item.type=='2'}}" class="weui-cell__bd">微信帐号：{{item.account}}</view>
+        <view wx:if="{{item.type=='3'}}" class="weui-cell__bd">银行卡号：{{item.account}}</view>
+        <navigator open-type='redirect' url='../my/bzzx'>
+          <view class="weui-cell__ft" style='font-size:26rpx; color:#34aaff;border:1rpx solid #34aaff;padding:6rpx 15rpx;border-radius:30rpx;"'>联系客服</view>
+        </navigator>
+      </view> -->
+    </view>
+  </block>
+  <view class='jzz' hidden='{{mygd}}'>
+    <image class='Rotation' src='../../../img/jzz.png'></image>
+    <view>加载中...</view>
+  </view>
+  <view wx:if="{{mygd}}" class='jzwb'>
+    <view class='hx'></view>
+    <view class='wz'>加载完毕</view>
+    <view class='hx'></view>
+  </view>
+</view>
