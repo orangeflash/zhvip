@@ -122,7 +122,7 @@ Page({
     if (this.data.userInfo.grade == '0') {
       wx.showModal({
         title: '提示',
-        content: '请点击立即开卡，开卡后使用此功能',
+        content: '请点击卡片激活，开卡后使用此功能',
       })
       return
     }
@@ -141,7 +141,7 @@ Page({
     if (this.data.userInfo.grade == '0') {
       wx.showModal({
         title: '提示',
-        content: '请点击立即开卡，开卡后使用此功能',
+        content: '请点击卡片激活，开卡后使用此功能',
       })
       return
     }
@@ -162,7 +162,7 @@ Page({
     if (this.data.userInfo.grade == '0') {
       wx.showModal({
         title: '提示',
-        content: '请点击立即开卡，开卡后领券',
+        content: '请点击卡片激活，开卡后领券',
       })
       return
     }
@@ -236,7 +236,7 @@ Page({
         if (this.data.userInfo.grade == '0') {
           wx.showModal({
             title: '提示',
-            content: '请点击立即开卡，开卡后使用此功能',
+            content: '请点击卡片激活，开卡后使用此功能',
           })
           return
         }

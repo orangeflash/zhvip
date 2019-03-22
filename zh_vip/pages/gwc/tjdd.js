@@ -334,7 +334,8 @@ Page({
     }
     var yprice = Number((xj + yf) .toFixed(2))
     var pre = Number((xj * (100-discount) / 100).toFixed(2)),pre2=kdje;
-    var totalprice = Number((yprice-pre-pre2).toFixed(2));
+    var yhoverprice = xj - pre - pre2 > 0 ? xj - pre - pre2:0
+    var totalprice = Number((yhoverprice+yf).toFixed(2));
     if (totalprice <= 0) {
       totalprice = 0
     }

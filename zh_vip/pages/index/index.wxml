@@ -25,7 +25,7 @@
             <navigator url='wyxf' wx:if="{{isdq=='1'}}" class='weui-cell__ft ljxf'>立即续费</navigator>
           </view>
           <view bindtap='ljkk' wx:else>
-            <view class='weui-cell__ft ljkk'>立即开卡</view>
+            <view class='weui-cell__ft ljkk'>卡片激活</view>
           </view>
         </view>
       </view>

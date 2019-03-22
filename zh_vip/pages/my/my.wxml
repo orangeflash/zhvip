@@ -108,7 +108,7 @@
       <view>{{xtxx.link_name}}</view>
     </view>
     <view bindtap='ljkk'>
-      <view class='ljkk'>立即开卡</view>
+      <view class='ljkk'>卡片激活</view>
     </view>
   </view>
   <view wx:if="{{issc}}" class="weui-cells weui-cells_after-title" style="margin-bottom: 30rpx;">
