@@ -333,8 +333,8 @@ Page({
       yf = 0;
     }
     var yprice = Number((xj + yf) .toFixed(2))
-    var pre = Number((yprice * (100-discount) / 100).toFixed(2)),pre2=kdje;
-    var totalprice = Number(((yprice*discount/100)-pre2).toFixed(2));
+    var pre = Number((xj * (100-discount) / 100).toFixed(2)),pre2=kdje;
+    var totalprice = Number((yprice-pre-pre2).toFixed(2));
     if (totalprice <= 0) {
       totalprice = 0
     }
