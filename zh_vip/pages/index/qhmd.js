@@ -200,7 +200,11 @@ Page({
             let latitude = res.latitude
             let longitude = res.longitude
             let op = latitude + ',' + longitude;
-            console.log(op)
+            that.setData({
+              start: {lat:latitude,lng:longitude},
+            })
+            that.tjpx(that.data.start, searchTitle);
+            //console.log(op)
             // 调用接口
             qqmapsdk.reverseGeocoder({
               location: {
@@ -209,15 +213,12 @@ Page({
               },
               coord_type: 1,
               success: function (res) {
-                var start = res.result.ad_info.location
-                console.log(res);
-                console.log(res.result.formatted_addresses.recommend);
-                console.log('坐标转地址后的经纬度：', res.result.ad_info.location)
+                // console.log(res);
+                // console.log(res.result.formatted_addresses.recommend);
+                // console.log('坐标转地址后的经纬度：', res.result.ad_info.location)
                 that.setData({
                   weizhi: res.result.formatted_addresses.recommend,
-                  start: start,
                 })
-                that.tjpx(that.data.start, searchTitle);
               },
               fail: function (res) {
                 console.log(res);

@@ -1,0 +1,84 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.1.0",
+	"appid": "wx80fa1d36c435231a",
+	"projectname": "%E4%BC%9A%E5%91%98%E5%8D%A1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "zh_vip/pages/index/index",
+					"query": "scene=1",
+					"scene": "1047"
+				},
+				{
+					"id": -1,
+					"name": "spxq",
+					"pathName": "zh_vip/pages/psdj/spxq",
+					"query": "id=2",
+					"scene": "1047"
+				},
+				{
+					"id": 2,
+					"name": "扫码核销",
+					"pathName": "zh_vip/pages/my/wdck/hx",
+					"query": "scene=3&storeid=3&acountid=1",
+					"scene": "1047"
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "zh_vip/pages/my/login",
+					"query": "",
+					"scene": "1035",
+					"referrerInfo": {
+						"appId": " wx80fa1d36c435231a"
+					}
+				},
+				{
+					"id": -1,
+					"name": "stklogin",
+					"pathName": "zh_vip/pages/my/stklogin",
+					"query": "",
+					"scene": "1035",
+					"referrerInfo": {
+						"appId": "wx80fa1d36c435231a"
+					}
+				}
+			]
+		}
+	}
+}
