@@ -331,11 +331,11 @@ Page({
           //登录
           // console.log(app.globalData)
           console.log(userInfo)
-          if (userInfo.img == '' || userInfo.nickname == '') {
-            wx.navigateTo({
-              url: '/zh_vip/pages/index/getdl',
-            })
-          }
+          // if (userInfo.img == '' || userInfo.nickname == '') {
+          //   wx.navigateTo({
+          //     url: '/zh_vip/pages/index/getdl',
+          //   })
+          // }
           that.setData({
             userInfo: userInfo,
           })

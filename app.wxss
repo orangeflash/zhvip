@@ -709,3 +709,40 @@ color: #ff7f46;
   width: 80rpx;
   height: 80rpx;
 }
+.mrtxc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx 30rpx;
+}
+.mrtxl{
+  width: 110rpx;
+  height: 110rpx;
+  margin-right: 20rpx;
+}
+.mrtxr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.wxyh{
+  color: #fff;
+}
+.djsq{
+  border: 2rpx solid #fff;
+  border-radius: 30rpx;
+  background: #fff;
+  height: 46rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  margin: 0;
+  margin-top: 10rpx;
+}
+.djsq::after {
+  border: none;
+}

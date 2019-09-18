@@ -8,6 +8,11 @@ Page({
   data: {
     color:'#09BB07',
   },
+  qx() {
+    wx.navigateBack({
+
+    })
+  },
   form_save: function (e) {
     console.log(e)
     var form_id = e.detail.formId
