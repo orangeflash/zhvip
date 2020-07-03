@@ -54,7 +54,7 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "会员卡",
     "navigationBarBackgroundColor": "#ff7f46",
-    "backgroundColor": "",
+    "backgroundColor": "#ffffff",
     "enablePullDownRefresh": false
   },
   "permission": {

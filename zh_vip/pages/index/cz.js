@@ -147,6 +147,7 @@ Page({
     })
   },
   formSubmit: function (e) {
+    app.util.requestSM('recharge').then(res=>{
     console.log('form发生了submit事件，携带数据为：', e.detail, e.detail.formId)
     var openid = getApp().getOpenId, money = e.detail.value.czje, czhd = this.data.czhd;
     var uid = wx.getStorageSync('UserData').id;
@@ -212,6 +213,7 @@ Page({
         }
       }
     })
+  })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

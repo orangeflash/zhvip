@@ -503,7 +503,36 @@ util.parseContent = function(string) {
 	}
 	return string;
 }
-
+//订阅消息配置
+util.getSmConfig=(cb)=>{
+  var app = getApp(), info = app.smconfig;
+  //  console.log('getSmConfiggetSmConfiggetSmConfig',info)
+   if (info) { cb(info) }
+   else {
+    util.request({
+    'url': 'entry/wxapp/TemplateList',
+    showLoading:1,
+     success: function (res) {
+     app.smconfig = res.data
+    //  console.log('TemplateListTemplateListTemplateList',res)
+     cb(res.data)
+     },
+    })
+   }
+ }
+ util.requestSM = function (type) {
+  return new Promise((resolve, reject) => {
+   this.getSmConfig((data) => {
+    wx.requestSubscribeMessage({
+     tmplIds: data[type],
+     complete: (res) => {
+      resolve()
+      // console.log('requestSubscribeMessage',res)
+     }
+    })
+   })
+  });
+ }
 util.date = function(){
 	/**
 	 * 判断闰年

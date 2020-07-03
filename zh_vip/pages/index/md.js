@@ -314,6 +314,7 @@ Page({
     });
   },
   formSubmit: function (e) {
+    app.util.requestSM('consumption').then(res=>{
     var that=this;
     var openid = getApp().getOpenId;
     console.log('form发生了submit事件，携带数据为：', e.detail.value.radiogroup)
@@ -565,6 +566,7 @@ Page({
         }
       }
     }
+  })
   },
   /**
    * 生命周期函数--监听页面加载

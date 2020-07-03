@@ -195,6 +195,7 @@ Page({
     }
   },
   formSubmit: function (e) {
+    app.util.requestSM('open').then(res=>{
     var that = this, vip_qx = this.data.xtxx.vip_qx, userInfo = this.data.userInfo;
     console.log(userInfo)
     if (userInfo.img == '' || userInfo.nickname == '') {
@@ -414,6 +415,7 @@ Page({
         content: warn
       })
     }
+  })
   },
   /**
    * 生命周期函数--监听页面加载

@@ -7,12 +7,18 @@
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"useCompilerModule": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.1.0",
-	"appid": "wx80fa1d36c435231a",
+	"libVersion": "2.11.3",
+	"appid": "wx2ef62300378e1579",
 	"projectname": "%E4%BC%9A%E5%91%98%E5%8D%A1",
 	"debugOptions": {
 		"hidedInDevtools": []
